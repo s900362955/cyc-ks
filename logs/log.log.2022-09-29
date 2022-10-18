@@ -1,0 +1,70 @@
+2022-09-29 10:50:39,751 INFO [com.cycks.Main] - slf4j for info
+2022-09-29 10:50:39,752 ERROR [com.cycks.Main] - slf4j for error
+2022-09-29 10:50:39,752 WARN [com.cycks.Main] - slf4j for warn
+2022-09-29 10:50:39,752 INFO [com.cycks.Main] - slf4j message is : Hello SLF4J
+2022-09-29 10:52:57,489 INFO [com.cycks.Main] - slf4j for info
+2022-09-29 10:52:57,490 ERROR [com.cycks.Main] - slf4j for error
+2022-09-29 10:52:57,490 WARN [com.cycks.Main] - slf4j for warn
+2022-09-29 10:52:57,490 INFO [com.cycks.Main] - slf4j message is : Hello SLF4J
+2022-09-29 10:59:22,029 INFO [com.cycks.Main] - slf4j for info
+2022-09-29 10:59:22,030 ERROR [com.cycks.Main] - slf4j for error
+2022-09-29 10:59:22,030 WARN [com.cycks.Main] - slf4j for warn
+2022-09-29 10:59:22,179 INFO [com.cycks.Main] - slf4j message is : Hello SLF4J
+2022-09-29 11:00:48,724 INFO [com.cycks.Main] - slf4j for info
+2022-09-29 11:00:48,724 ERROR [com.cycks.Main] - slf4j for error
+2022-09-29 11:00:48,724 WARN [com.cycks.Main] - slf4j for warn
+2022-09-29 11:00:48,725 INFO [com.cycks.Main] - slf4j message is : Hello SLF4J
+2022-09-29 11:00:57,497 ERROR [com.cycks.Main] - slf4j message is : {}
+java.io.FileNotFoundException:  (系統找不到指定的路徑。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at com.cycks.OpenCSVReadBeans.<init>(OpenCSVReadBeans.java:17)
+	at com.cycks.ks.KsPrint$1.actionPerformed(KsPrint.java:49)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6626)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3389)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6391)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5001)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:722)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:716)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:746)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:744)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:743)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2022-09-29 11:04:22,513 INFO [com.cycks.Main] - slf4j for info
+2022-09-29 11:04:22,514 ERROR [com.cycks.Main] - slf4j for error
+2022-09-29 11:04:22,514 WARN [com.cycks.Main] - slf4j for warn
+2022-09-29 11:04:22,514 INFO [com.cycks.Main] - slf4j message is : Hello SLF4J
+2022-09-29 11:04:30,168 ERROR [com.cycks.Main] - java.io.FileNotFoundException:  (系統找不到指定的路徑。)
+2022-09-29 11:21:06,213 ERROR [com.cycks.Main] - net.sf.jasperreports.engine.JRException: java.io.FileNotFoundException: .\layout\Ks.jrxml (系統找不到指定的檔案。)
+2022-09-29 11:23:04,192 ERROR [com.cycks.Main] - net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $F{dueDate}.substring( 4, 6)
+2022-09-29 11:58:26,178 ERROR [com.cycks.Main] - net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $F{dueDate}.substring( 4, 6)
+2022-09-29 11:58:39,174 ERROR [com.cycks.Main] - net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $F{dueDate}.substring( 4, 6)
+2022-09-29 13:11:24,532 ERROR [com.cycks.Main] - D:\國聲世新列印檔\資料檔\KS-1111001.csv檔案讀取中
+2022-09-29 13:11:53,660 ERROR [com.cycks.Main] - D:\國聲世新列印檔\資料檔\KS-1111001.csv檔案讀取中

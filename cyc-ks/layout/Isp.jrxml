@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Isp" pageWidth="595" pageHeight="842" whenNoDataType="BlankPage" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="bc909aad-00f2-42c2-9a53-01218ef6b548">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String"/>
+	<field name="custNumber" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="company" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="postCode" class="java.lang.String"/>
+	<field name="post" class="java.lang.String"/>
+	<field name="isp" class="java.lang.String"/>
+	<field name="product1" class="java.lang.String"/>
+	<field name="dueDate" class="java.lang.String"/>
+	<field name="bar1" class="java.lang.String"/>
+	<field name="bar2" class="java.lang.String"/>
+	<field name="bar3" class="java.lang.String"/>
+	<field name="amount" class="java.lang.String"/>
+	<field name="machinePost" class="java.lang.String"/>
+	<field name="postCoBar1" class="java.lang.String"/>
+	<field name="postCoBar2" class="java.lang.String"/>
+	<field name="postCoBar3" class="java.lang.String"/>
+	<field name="atm" class="java.lang.String"/>
+	<field name="systemNum" class="java.lang.String"/>
+	<field name="chargeItems1" class="java.lang.String"/>
+	<field name="chargeItems2" class="java.lang.String"/>
+	<field name="nameMasking" class="java.lang.String"/>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="100" y="70" width="100" height="20" uuid="12dfd1a4-4d01-48a1-bb25-b15b508b77f4"/>
+				<textElement>
+					<font fontName="標楷體" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="90" width="310" height="40" uuid="c48714a2-15f9-4986-b0af-1c954667c95a"/>
+				<textElement>
+					<font fontName="標楷體" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{post}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="130" width="270" height="30" uuid="88474d69-b93f-4e94-95ef-257322615fdb"/>
+				<textElement>
+					<font fontName="標楷體" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name} + "  先生/小姐/寶號 啟"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="160" width="120" height="20" uuid="3607625e-03ee-480d-afe3-5d7d07553410"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["序號 : " + $F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="295" width="119" height="20" uuid="d8e2d24c-56ba-4e5f-95e4-5bf5b112c137"/>
+				<textElement>
+					<font fontName="標楷體" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="540" width="119" height="20" uuid="a537d609-0e33-4413-842e-f49fe85741a9"/>
+				<textElement>
+					<font fontName="標楷體" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="109" y="316" width="110" height="25" uuid="e8f601a9-a34a-4aea-ac5a-c1ef69c54a70"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{atm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="319" width="56" height="22" uuid="81f2f7b4-3d8d-46f1-9a5d-558b29d448a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{custNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="302" width="100" height="14" uuid="9e224a07-5aaf-4d7e-92d1-b04f99f9632a"/>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{systemNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="341" width="160" height="19" uuid="d8e393fb-9ed5-4bca-88e2-db60aa488159"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="標楷體" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement x="54" y="362" width="210" height="12" uuid="cae14340-fb66-487b-93ba-7de78d6aa54d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA["使用 ISP : " + $F{isp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="54" y="374" width="210" height="12" uuid="2c4c5cf0-a550-4ffe-9c8f-8c9d9699ed88">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA["方案 : " +  $F{product1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="54" y="387" width="210" height="12" uuid="fc582f49-ad2a-41db-a138-6606bcec0095">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chargeItems1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="54" y="400" width="210" height="12" uuid="95d2d80f-022c-4805-9eaf-607d8b38f6a5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chargeItems2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="418" width="274" height="24" uuid="b006c2d4-7720-4f50-9977-2a8559caab2b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{machinePost}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="446" width="376" height="18" uuid="88528a58-6018-4213-ad84-8688adc0af93"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[貴客戶若持本單於便利商店繳費，請要求蓋收訖章並核對金額。]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="340" y="350" width="170" height="20" uuid="a793aedc-5e0f-4a82-bf20-176cf989c6df"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["繳費期限 : " + $F{dueDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="370" width="170" height="20" uuid="58c3af94-e202-4bfe-beb0-d0fdd7d631a1"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["應繳總金額 : " + $F{amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="341" y="414" width="166" height="30" uuid="a12626ac-c63b-4674-a4b2-b478231752d6"/>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<text><![CDATA[合約期間,免費推廣升級。約滿後如續
+用須另行簽訂新約。]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="673" width="110" height="25" uuid="d6b91889-3840-40a6-a9c2-632b64e02a87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{atm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="277" y="674" width="46" height="22" uuid="f9e6372a-d260-4a75-b558-8de7bc49877e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{custNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="676" width="48" height="20" uuid="0bb93390-7423-4354-91eb-79f40800eb2f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dueDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="467" y="674" width="44" height="22" uuid="216a4221-d1bd-4331-b109-6b893781bd78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="108" y="698" width="216" height="19" uuid="94725b4a-97ea-44e7-bc44-c7c34c7babac"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="標楷體" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="720" width="268" height="12" uuid="ef65d4ce-f167-4656-9004-e681fa10cbeb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA["使用 ISP : " + $F{isp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="732" width="268" height="12" uuid="89e83741-51ce-423a-9ca1-849f03b4b86e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA["方案 : " +  $F{product1}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="332" y="626" width="127" height="28" uuid="8af2df18-7cc8-4ef2-a84b-175eaea4eaf1"/>
+				<componentElement>
+					<reportElement x="0" y="0" width="127" height="17" uuid="3868153e-3cc2-409d-8c56-a44184cd6131"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+						<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="0" y="17" width="85" height="11" uuid="5af4be32-3a01-45a8-8e0c-6e32b8ea59c9"/>
+					<textElement>
+						<font fontName="Consolas" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{bar3}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="273" y="340" width="57" height="75" uuid="e4c368b0-15b0-4983-898d-6c074589536a">
+					<printWhenExpression><![CDATA[!$F{email}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<line>
+					<reportElement x="0" y="0" width="1" height="75" uuid="179e9a38-1374-486a-a6c8-8d1599c5d40a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<staticText>
+					<reportElement x="7" y="2" width="46" height="12" uuid="866ada79-d53a-44c5-b0af-c9012deccc28"/>
+					<textElement>
+						<font fontName="標楷體" size="8"/>
+					</textElement>
+					<text><![CDATA[台灣pay繳款]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="11" width="54" height="14" uuid="7ab8d4a4-9eb2-4796-8a12-adc15ecf2d1f"/>
+					<textElement>
+						<font fontName="標楷體" size="6"/>
+					</textElement>
+					<text><![CDATA[(僅支援綁定金融卡)]]></text>
+				</staticText>
+				<componentElement>
+					<reportElement x="5" y="24" width="49" height="49" uuid="d280f6cd-6bc4-4832-86d1-95108aed614e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<jr:codeExpression><![CDATA[$F{email}]]></jr:codeExpression>
+					</jr:QRCode>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement x="83" y="563" width="85" height="28" uuid="cbc8b80d-b2e2-4b4c-a8e1-67ec9a6dc244"/>
+				<textField>
+					<reportElement x="0" y="0" width="85" height="11" uuid="2dab6e5d-d2e9-484d-8136-83c4181d4fb3"/>
+					<textElement>
+						<font fontName="Consolas" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{postCoBar1}]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="11" width="85" height="17" uuid="fb4536a2-be50-410b-aef8-021b239da2c4"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+						<jr:codeExpression><![CDATA[$F{postCoBar1}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement x="83" y="594" width="170" height="28" uuid="ef52c980-b6cc-407b-9c7b-92e549a3b854"/>
+				<textField>
+					<reportElement x="0" y="0" width="85" height="11" uuid="e05d065d-27b2-4282-8652-032055331d03"/>
+					<textElement>
+						<font fontName="Consolas" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{postCoBar2}]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="11" width="170" height="17" uuid="98e2544e-4604-4773-9177-46690ea88531"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+						<jr:codeExpression><![CDATA[$F{postCoBar2}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement x="82" y="626" width="113" height="28" uuid="bcfe42fe-e1cd-46e6-90e8-5739f83c507c"/>
+				<textField>
+					<reportElement x="0" y="0" width="85" height="11" uuid="8a4f9554-bf24-41a6-a938-092aea2dc197"/>
+					<textElement>
+						<font fontName="Consolas" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{postCoBar3}]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="11" width="113" height="17" uuid="bdc63a3e-faec-4820-8a34-40a1b0c34179"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+						<jr:codeExpression><![CDATA[$F{postCoBar3}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement x="332" y="563" width="85" height="26" uuid="74390832-8004-400a-b337-4ee22bec8e79"/>
+				<textField>
+					<reportElement x="0" y="15" width="85" height="11" uuid="6d2bdac7-620e-4835-bf50-86064fe4b321"/>
+					<textElement>
+						<font fontName="Consolas" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{bar1}]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="0" width="85" height="17" uuid="3c13b095-1d8b-4316-9c62-ecad3edc25f9"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+						<jr:codeExpression><![CDATA[$F{bar1}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement x="332" y="594" width="170" height="28" uuid="6423b805-146a-44a4-81ab-982c3efe3c4b"/>
+				<componentElement>
+					<reportElement x="0" y="0" width="170" height="17" uuid="f5b62032-8cc7-4dfb-be88-1dcb0ff0f7ab"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="false" checksumRequired="false">
+						<jr:codeExpression><![CDATA[$F{bar2}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="0" y="17" width="85" height="11" uuid="56dfcbe5-38b6-41d4-bbef-71f43b092f1e"/>
+					<textElement>
+						<font fontName="Consolas" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{bar2}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField>
+				<reportElement x="180" y="220" width="50" height="19" uuid="ce84b6f4-4b6c-4fb1-86c9-319fe1360c10"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dueDate}.substring( 0, 3 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="220" width="32" height="19" uuid="5567cae5-2ee2-4b6b-bff7-41ab7c01d72e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dueDate}.substring( 3, 5 )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="219" width="32" height="19" uuid="9545000e-0182-4729-b674-0a91e7a22839"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dueDate}.substring( 5, 7 )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
